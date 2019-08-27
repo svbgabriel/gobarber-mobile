@@ -40,6 +40,7 @@ export default function SelectDateTime({ navigation }) {
 
         <HourList
           data={hours}
+          extraData={date}
           keyExtractor={item => item.time}
           renderItem={({ item }) => (
             <Hour
